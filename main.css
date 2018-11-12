@@ -1,0 +1,186 @@
+header {
+	height: 100%;
+}
+
+html {
+	height: 100%;
+	position: relative;
+}
+
+* {
+    font-family: arial;
+}
+
+.banner-top {
+	margin: auto;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../img/companylogoBG.jpg");
+
+    /* Set a specific height */
+    height: 20%;
+    width: 400px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-top h1 {	
+	text-align: center;
+    position: relative;
+    color: #ffffff;
+    white-space: nowrap;
+}
+/* Place text in the middle of the image */
+main {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 400px;
+	justify-content: center;
+	margin: auto;
+}
+
+.navigation-bar {
+	height: 22px;
+    margin: auto;
+	width: 400px;
+	background-color: #707070;
+	color: #ffffff;
+	text-align: center;
+	border-style: solid;
+	border-color: #cfcfcf;
+	border-width: 1px;
+}
+.navigation-bar a {
+	position: relative;
+	color: #ffffff;
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 9pt;
+	text-align: center;
+}
+.no-underline {
+	text-decoration: none;
+}
+
+section {
+	max-width: 400px;
+    margin : auto;
+}
+
+.section-header {
+	align-items: center; /* align vertical */
+	height: 90px;
+	width: 100%;
+	background-color: #2699fb;
+
+}
+
+section h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+    position: relative;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: lighter;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+span {
+	display: block;
+}
+
+figure {
+	max-width: 400px;
+	height: 168px;
+	margin: 0px;
+}
+
+img {
+  	vertical-align: middle;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+  	overflow: hidden;
+}
+
+footer {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: lighter;
+	font-size: 9pt;
+	text-align: center;
+	height: 22px;
+    margin: auto;
+	width: 400px;
+	border-top: ridge #707070;
+	border-width: 1px;
+}
+
+footer p {
+	margin-top: 0px;
+}
+
+@media screen and (max-width: 960px) {
+	.collapsed {
+		display: none;
+	}
+}
+
+@media  (min-width: 361px) and (max-width: 960px) {
+	.collapsed-medium {
+		display: none;
+	}
+	.growing {
+		width: 50%;
+	}
+	.growing figure {
+		height: 160px;
+		border-style: solid;
+		border-color: #ffffff;
+		border-width: 2px;
+	}
+	.section-header {
+		height: 95px;
+	}
+	.navigation-bar {
+		height: 15px;
+	}
+	footer {
+		border-top: none;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+	.collapsed-small {
+		display: none;
+	}
+	.navigation-bar {
+		height: 40px;
+		width: 392px;
+		border: solid;
+		border-color: #ffffff;
+		border-width: 4px;
+	}
+
+	figure {
+		border: solid;
+		border-color: #ffffff;
+		border-width: 4px;
+		height: 155px;
+	}
+	footer {
+		height: 50px;
+	}
+	footer p {
+		font-size: 1.5em;
+	}
+}
