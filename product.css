@@ -21,28 +21,6 @@ header {
     font-style: normal;
 }
 
-video {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin: none;
-}
-
-#backgroundVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-position: center;
-	background-size: cover;
-	object-fit: fill;
-    z-index: -100;
-}
-
 .banner-top {
 	margin: auto;
 	display: flex;
@@ -64,7 +42,7 @@ video {
 	font-family: 'Berlin Sans FB';
     font-weight: 450;
     font-style: normal;
-    text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,	-1px 1px 0 #000, 1px 1px 0 #000;
 	text-align: center;
     position: relative;
     color: #ffffff;
@@ -82,7 +60,7 @@ main {
 .navigation-bar {
 	height: 22px;
     margin: auto;
-	width: 398px;
+	width: 400px;
 	background-color: #707070;
 	color: #ffffff;
 	text-align: center;
@@ -105,15 +83,22 @@ main {
 	text-decoration: none;
 }
 
+img {
+  	vertical-align: middle;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+  	overflow: hidden;
+}
+
 section {
-	width: 400px;
+	max-width: 400px;
     margin : auto;
-    z-index: 0;
 }
 
 .section-header {
 	align-items: center; /* align vertical */
-	height: 90px;
+	height: 45px;
 	width: 100%;
 	background-color: #2699fb;
 
@@ -127,26 +112,9 @@ section h2 {
     color: #ffffff;
     font-size: 2em;
     font-weight: lighter;
+    text-transform: uppercase;
 	top: 50%;
 	transform: translateY(-50%);
-}
-
-span {
-	display: block;
-}
-
-figure {
-	max-width: 400px;
-	height: 168px;
-	margin: 0px;
-}
-
-img {
-  	vertical-align: middle;
-  	width: 100%;
-  	height: 100%;
-  	object-fit: cover;
-  	overflow: hidden;
 }
 
 footer {
@@ -160,81 +128,5 @@ footer {
 	width: 400px;
 	border-top: ridge #707070;
 	border-width: 1px;
-	line-height: 24px;
 }
 
-footer p {
-	margin-top: 0px;
-}
-
-@media screen and (max-width: 960px) {
-	.collapsed {
-		display: none;
-	}
-}
-
-@media  (min-width: 361px) and (max-width: 960px) {
-	.collapsed-medium {
-		display: none;
-	}
-	.growing {
-		width: 50%;
-	}
-	.growing figure {
-		height: 160px;
-		border-style: solid;
-		border-color: #ffffff;
-		border-width: 2px;
-	}
-
-	.section-header {
-		height: 95px;
-	}
-
-	.navigation-bar {
-		height: 15px;
-	}
-	.navigation-bar a {
-		top: -2px;
-	}
-
-	footer {
-		border-top: none;
-	}
-
-}
-
-@media screen and (max-width: 360px) {
-	.collapsed-small {
-		display: none;
-	}
-
-	#backgroundVideo {
-		display: none;
-	}
-
-	.navigation-bar {
-		height: 40px;
-		width: 392px;
-		border: solid;
-		border-color: #ffffff;
-		border-width: 4px;
-	}
-	.navigation-bar a {
-		display: none;
-	}
-
-	figure {
-		border: solid;
-		border-color: #ffffff;
-		border-width: 4px;
-		height: 155px;
-	}
-	footer {
-		height: 50px;
-	}
-	footer p {
-		font-size: 1.5em;
-		line-height: 42px;
-	}
-}
