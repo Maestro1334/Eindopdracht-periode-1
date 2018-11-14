@@ -21,6 +21,28 @@ header {
     font-style: normal;
 }
 
+video {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: none;
+}
+
+#backgroundVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+	background-size: cover;
+	object-fit: fill;
+    z-index: -100;
+}
+
 .banner-top {
 	margin: auto;
 	display: flex;
@@ -89,6 +111,13 @@ img {
   	height: 100%;
   	object-fit: cover;
   	overflow: hidden;
+  	padding-left: none;
+}
+
+figure {
+	max-width: 400px;
+	height: 80px;
+	margin: 0px;
 }
 
 section {
@@ -117,6 +146,21 @@ section h2 {
 	transform: translateY(-50%);
 }
 
+.row {
+  display: flex;
+  background-color: #FFF;
+  border-left: solid #fff 2px;
+  border-right: solid #fff 2px;
+}
+
+
+.column {
+  flex: 33.33%;
+  padding-top: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
 footer {
 	background-color: #000000;
 	color: #ffffff;
@@ -128,5 +172,11 @@ footer {
 	width: 400px;
 	border-top: ridge #707070;
 	border-width: 1px;
+	border-top: solid #fff 6px;
+}
+
+footer p {
+	line-height: 22px;
+	margin: 0px;
 }
 

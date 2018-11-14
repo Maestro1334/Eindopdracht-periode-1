@@ -177,6 +177,11 @@ footer p {
 	.collapsed-medium {
 		display: none;
 	}
+
+	#backgroundVideo {
+		display: none;
+	}
+
 	.growing {
 		width: 50%;
 	}
@@ -185,6 +190,7 @@ footer p {
 		border-style: solid;
 		border-color: #ffffff;
 		border-width: 2px;
+		float: left;
 	}
 
 	.section-header {
@@ -220,8 +226,10 @@ footer p {
 		border-color: #ffffff;
 		border-width: 4px;
 	}
+	
 	.navigation-bar a {
-		display: none;
+		line-height: 40px;
+		font-size: 1em;
 	}
 
 	figure {
