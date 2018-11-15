@@ -14,80 +14,83 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+	<link rel="manifest" href="./favicons/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="viewport" content="width=device-width">
+	
 </head>
 
-<body id="home">
+<body>
 
-	<header class="banner-top">
+	<video autoplay muted loop poster="./img/background.jpeg" id="backgroundVideo">
+		<source src="./movie/background.mp4" type="video/mp4">
+		</video>
 
-		<h1>COMPANY NAME</h1>
+		<header class="banner-top">
+			<h1>COMPANY NAME</h1>
+		</header>
 
-	</header>
+		<nav class="navigation-bar">
+			<a href="./product.html" class="no-underline">products</a>
+			<a href="https://www.blogger.com" class="no-underline">blog</a>
+			<a href="./contact.html" class="no-underline">contact</a>
+		</nav>
 
-	<nav class="navigation-bar">
-		<a href="./product.html" class="no-underline">products</a>
-		<a href="https://www.blogger.com" class="no-underline">blog</a>
-		<a href="./contact.html" class="no-underline">contact</a>
-	</nav>
+		<main>
+			<section class="section-header">
+				<h2>we are entertainment</h2>
+			</section>
+			<section class="growing">
+				<figure>
+					<img src="img/product3.jpg" alt="Mario, Luigi & Yoshi" title="We are entertainment!">
+				</figure>
+			</section>
 
-	<main>
-		<section class="section-header">
-			<h2>WE ARE ENTERTAINMENT</h2>
-		</section>
-		<section class="growing">
-			<figure>
-				<img src="img/product3.jpg" alt="Mario, Luigi & Yoshi" title="We are entertainment!">
-			</figure>
-		</section>
+			<section class="section-header collapsed">
+				<h2><span>mobile</span><span>games</span></h2>
+			</section>
+			<section class="growing">
+				<figure>
+					<img src="img/product8.jpg" alt="Mobile phone in hand" title="Mobile GAMES">
+				</figure>
+			</section>
 
-		<section class="section-header collapsed">
-			<h2><span>MOBILE</span><span>GAMES</span></h2>
-		</section>
-		<section class="growing">
-			<figure>
-				<img src="img/product8.jpg" alt="Mobile phone in hand" title="Mobile GAMES">
-			</figure>
-		</section>
+			<section class="section-header collapsed">
+				<h2><span>board</span><span>games</span></h2>
+			</section>
+			<section class="collapsed-medium">
+				<figure>
+					<img src="img/product6.jpg" alt="Four pawns" title="Board GAMES">
+				</figure>
+			</section>
 
-		<section class="section-header collapsed">
-			<h2><span>BOARD</span><span>GAMES</span></h2>
-		</section>
-		<section class="collapsed-medium">
-			<figure>
-				<img src="img/product6.jpg" alt="Four pawns" title="Board GAMES">
-			</figure>
-		</section>
+			<section class="section-header collapsed-small">
+				<h2><span>console</span><span>games</span></h2>
+			</section>
+			<section>
+				<figure>
+					<img src="img/product9.jpg" alt="Game console controller" title="Console GAMES">
+				</figure>
+			</section>
+		</main>
+		<footer>
+			<aside><p>&copy; 2018 - Mattis Meeuwesse - Inholland</p></aside>
+		</footer>
+	</body>
 
-		<section class="section-header collapsed-small">
-			<h2><span>CONSOLE</span><span>GAMES</span></h2>
-		</section>
-		<section>
-			<figure>
-				<img src="img/product9.jpg" alt="Game console controller" title="Console GAMES">
-			</figure>
-		</section>
-	</main>
-	<footer>
-		<aside><p>&copy; 2018 - Mattis Meeuwesse - Inholland</p></aside>
-	</footer>
-</body>
-
-</html>
+	</html>
