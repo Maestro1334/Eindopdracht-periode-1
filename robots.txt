@@ -1,0 +1,3 @@
+User agent: *
+Disallow: /inholland
+mattis-meeuwesse.azurewebsites.net/sitemap.xml
